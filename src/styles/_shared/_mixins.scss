@@ -1,0 +1,91 @@
+/*
+RESPONSIVE SPECS
+-------------------------------------------
+VIEWPORT   RANGE           CONTENT WIDTH
+SMALL    | 320 - 735     | 87.5%
+MEDIUM   | 736 - 1068    | 692px
+LARGE    | 1069 - 1441   | 980px
+X-LARGE  | 1442 - 3008   | 980px
+*/
+
+@mixin content-container {
+  width: 980px;
+  margin: 0 auto;
+
+  @include viewport(medium) {
+    width: 692px;
+  }
+
+  @include viewport(small) {
+    width: 87.5%;
+  }
+}
+
+@mixin inner-content-container {
+  text-align: center;
+  width: 765px;
+
+  @include viewport(medium) {
+    width: 100%;
+  }
+}
+
+@mixin prepareTextForGradient {
+  -moz-background-clip: text;
+  -ms-background-clip: text;
+  -o-background-clip: text;
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  -moz-text-fill-color: transparent;
+  -ms-text-fill-color: transparent;
+  -o-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+
+  -webkit-clip-path: polygon(0 1%, 100% 1%, 100% 99%, 0% 99%);
+  clip-path: polygon(0 1%, 100% 1%, 100% 99%, 0% 99%);
+}
+
+// gradients:
+@mixin gradient_orange-to-turquoise {
+  background: linear-gradient(-225deg, rgba(83, 159, 180, 0) 0%, rgb(83, 159, 180) 100%),
+    linear-gradient(63.434948822922024deg, rgb(248, 51, 0) 0%, rgb(247, 11, 88) 50%, rgb(104, 36, 232) 100%);
+
+  @include prepareTextForGradient;
+}
+
+@mixin gradient_turquoise-to-purple {
+  background: linear-gradient(-225deg, rgb(83, 159, 180) 25%, rgb(104, 36, 232) 100%);
+
+  @include prepareTextForGradient;
+}
+
+@mixin gradient_orange-to-pink {
+  background: linear-gradient(
+    45deg,
+    rgba(241, 110, 33, 1) 0%,
+    rgba(248, 51, 0, 1) 25%,
+    rgba(247, 11, 88, 1) 50%,
+    rgba(248, 51, 0, 1) 75%,
+    rgba(241, 110, 33, 1) 100%
+  );
+
+  @include prepareTextForGradient();
+}
+
+@mixin gradient_blue_to_purple {
+  background: linear-gradient(
+    45deg,
+    rgba(83, 159, 180, 1) 0%,
+    rgba(104, 36, 232, 1) 25%,
+    rgba(122, 23, 222, 1) 50%,
+    rgba(104, 36, 232, 1) 75%,
+    rgba(83, 159, 180, 1) 100%
+  );
+
+  @include prepareTextForGradient;
+}

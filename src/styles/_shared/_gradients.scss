@@ -1,0 +1,25 @@
+.gradient_orange-to-turquoise {
+  @include gradient_orange-to-turquoise;
+}
+
+.gradient_orange-to-pink {
+  @include gradient_orange-to-pink;
+}
+
+.gradient_blue_to_purple {
+  @include gradient_blue_to_purple;
+}
+
+.gradient_orange-to-turquoise_animated {
+  background: black;
+  @include prepareTextForGradient;
+  background-size: 0% 100%;
+  animation: to-Gradient_orange-to-turquoise 700ms cubic-bezier(0, 0, 0.23, 1) forwards;
+}
+
+@keyframes to-Gradient_orange-to-turquoise {
+  to {
+    @include gradient_orange-to-turquoise;
+    background-size: 100% 100%;
+  }
+}
