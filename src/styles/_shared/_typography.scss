@@ -13,6 +13,27 @@ $text-6xl: 4rem;
 
 $default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 
+h1 {
+  font-size: $text-4xl;
+  font-weight: 200;
+  letter-spacing: .15rem;
+}
+
+h2 {
+  font-size: $text-6xl;
+
+
+  .vibe-logo {
+    font-family: AristaProAlternateLight;
+    font-size: 4.5rem;
+  }
+}
+
+.vibe-logo {
+  font-family: AristaProAlternateExtraLight;
+  font-size: 2.6rem;
+}
+
 @font-face {
   font-family: AristaProAlternateBold;
   src: url(./fonts/Arista-Pro-Alternate-Bold.ttf);

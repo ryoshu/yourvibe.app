@@ -1,33 +1,98 @@
+/** src/styles/_mixins.scss **/
+
 /*
-RESPONSIVE SPECS
+Responsive Specs
 -------------------------------------------
-VIEWPORT   RANGE           CONTENT WIDTH
-SMALL    | 320 - 735     | 87.5%
-MEDIUM   | 736 - 1068    | 692px
-LARGE    | 1069 - 1441   | 980px
-X-LARGE  | 1442 - 3008   | 980px
+Viewport   Range           Content Width
+x-small  | 320 - 735     | 87.5%
+small    | 320 - 735     | 87.5%
+medium   | 736 - 1068    | 692px
+large    | 1069 - 1441   | 980px
+x-large  | 1442 - 3008   | 980px
 */
 
 @mixin content-container {
-  width: 980px;
-  margin: 0 auto;
+  @media screen and (min-width: $viewport-xlarge_min-width) { //x-large
+    width: 980px;
+    font-size: $text-4xl;
+    font-weight: 200;
 
-  @include viewport(medium) {
+    h1 {
+
+    }
+  }
+
+  @media screen and (min-width: $viewport-large_min-width) and (max-width: $viewport-large_max-width) { //large
+    width: 980px;
+    font-size: $text-4xl;
+    font-weight: 200;
+
+    h1 {
+
+    }
+
+    h2 {
+      
+    }
+  }
+
+  @media screen and (min-width: $viewport-medium_min-width) and (max-width: $viewport-medium_max-width) { //medium
     width: 692px;
+    font-size: $text-4xl;
+    font-weight: 200;
+
+    h1 {
+
+    }
+
+    h2 {
+      
+    }
   }
 
-  @include viewport(small) {
+  @media screen and (min-width: $viewport-small_min-width) and (max-width: $viewport-small_max-width) { //small
     width: 87.5%;
-  }
-}
+    font-size: $text-xl;
+    font-weight: 200;
 
-@mixin inner-content-container {
-  text-align: center;
-  width: 765px;
+    .vibe-logo {
+      font-size: 1.45rem;
+    }
 
-  @include viewport(medium) {
-    width: 100%;
+    h1 {
+      font-size: $text-xl;
+
+      .vibe-logo {
+        font-size: $text-3xl;
+      }
+    }
+
+    h2 {
+      font-size: $text-2xl;
+
+      .vibe-logo {
+        font-size: 1.8rem;
+      }
+    }
   }
+
+  @media screen and (max-width: $viewport-xsmall_max-width) { //small
+    width: 87.5%;
+    font-size: $text-4xl;
+    font-weight: 200;
+    
+    h1 {
+      font-size: $text-xl;
+
+      .vibe-logo {
+        font-size: $text-3xl;
+      }
+    }
+
+    h2 {
+      font-size: $text-2xl;
+    }
+  } 
 }
 
 @mixin prepareTextForGradient {
