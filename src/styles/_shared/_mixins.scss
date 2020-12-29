@@ -85,7 +85,7 @@ x-large  | 1442 - 3008   | 980px
       font-size: $text-xl;
 
       .vibe-logo {
-        font-size: $text-3xl;
+        font-size: $text-6xl;
       }
     }
 
@@ -95,7 +95,16 @@ x-large  | 1442 - 3008   | 980px
   } 
 }
 
-@mixin prepareTextForGradient {
+
+
+@mixin full-height-container-vertically-centered {
+  position: relative;
+  margin: 0 auto;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@mixin prepare-text-for-gradient {
   -moz-background-clip: text;
   -ms-background-clip: text;
   -o-background-clip: text;
@@ -113,44 +122,4 @@ x-large  | 1442 - 3008   | 980px
 
   -webkit-clip-path: polygon(0 1%, 100% 1%, 100% 99%, 0% 99%);
   clip-path: polygon(0 1%, 100% 1%, 100% 99%, 0% 99%);
-}
-
-// gradients:
-@mixin gradient_orange-to-turquoise {
-  background: linear-gradient(-225deg, rgba(83, 159, 180, 0) 0%, rgb(83, 159, 180) 100%),
-    linear-gradient(63.434948822922024deg, rgb(248, 51, 0) 0%, rgb(247, 11, 88) 50%, rgb(104, 36, 232) 100%);
-
-  @include prepareTextForGradient;
-}
-
-@mixin gradient_turquoise-to-purple {
-  background: linear-gradient(-225deg, rgb(83, 159, 180) 25%, rgb(104, 36, 232) 100%);
-
-  @include prepareTextForGradient;
-}
-
-@mixin gradient_orange-to-pink {
-  background: linear-gradient(
-    45deg,
-    rgba(241, 110, 33, 1) 0%,
-    rgba(248, 51, 0, 1) 25%,
-    rgba(247, 11, 88, 1) 50%,
-    rgba(248, 51, 0, 1) 75%,
-    rgba(241, 110, 33, 1) 100%
-  );
-
-  @include prepareTextForGradient();
-}
-
-@mixin gradient_blue_to_purple {
-  background: linear-gradient(
-    45deg,
-    rgba(83, 159, 180, 1) 0%,
-    rgba(104, 36, 232, 1) 25%,
-    rgba(122, 23, 222, 1) 50%,
-    rgba(104, 36, 232, 1) 75%,
-    rgba(83, 159, 180, 1) 100%
-  );
-
-  @include prepareTextForGradient;
 }

@@ -16,12 +16,10 @@ $default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxy
 h1 {
   font-size: $text-4xl;
   font-weight: 200;
-  letter-spacing: .15rem;
 }
 
 h2 {
   font-size: $text-6xl;
-
 
   .vibe-logo {
     font-family: AristaProAlternateLight;
@@ -36,80 +34,80 @@ h2 {
 
 @font-face {
   font-family: AristaProAlternateBold;
-  src: url(./fonts/Arista-Pro-Alternate-Bold.ttf);
+  src: url(fonts/Arista-Pro-Alternate-Bold.ttf);
 }
 
 @font-face {
   font-family: AristaProAlternateExtraLight;
-  src: url(./fonts/Arista-Pro-Alternate-ExtraLight.ttf);
+  src: url(fonts/Arista-Pro-Alternate-ExtraLight.ttf);
 }
 
 @font-face {
   font-family: AristaProAlternateFat;
-  src: url(./fonts/Arista-Pro-Alternate-Fat.ttf);
+  src: url(fonts/Arista-Pro-Alternate-Fat.ttf);
 }
 
 @font-face {
   font-family: AristaProAlternateHairline;
-  src: url(./fonts/Arista-Pro-Alternate-Hairline.ttf);
+  src: url(fonts/Arista-Pro-Alternate-Hairline.ttf);
 }
 
 @font-face {
   font-family: AristaProAlternateLight;
-  src: url(./fonts/Arista-Pro-Alternate-Light.ttf);
+  src: url(fonts/Arista-Pro-Alternate-Light.ttf);
 }
 
 @font-face {
   font-family: AristaProAlternateRegular;
-  src: url(./fonts/Arista-Pro-Alternate-Regular.ttf);
+  src: url(fonts/Arista-Pro-Alternate-Regular.ttf);
 }
 
 @font-face {
   font-family: AristaProAlternateSemiBold;
-  src: url(./fonts/Arista-Pro-Alternate-SemiBold.ttf);
+  src: url(fonts/Arista-Pro-Alternate-SemiBold.ttf);
 }
 
 @font-face {
   font-family: AristaProAlternateThin;
-  src: url(./fonts/Arista-Pro-Alternate-Thin.ttf);
+  src: url(fonts/Arista-Pro-Alternate-Thin.ttf);
 }
 
 @font-face {
   font-family: AristaProBold;
-  src: url(./fonts/Arista-Pro-Bold.ttf);
+  src: url(fonts/Arista-Pro-Bold.ttf);
 }
 
 @font-face {
   font-family: AristaProExtraLight;
-  src: url(./fonts/Arista-Pro-ExtraLight.ttf);
+  src: url(fonts/Arista-Pro-ExtraLight.ttf);
 }
 
 @font-face {
   font-family: AristaProFat;
-  src: url(./fonts/Arista-Pro-Fat.ttf);
+  src: url(fonts/Arista-Pro-Fat.ttf);
 }
 
 @font-face {
   font-family: AristaProHairline;
-  src: url(./fonts/Arista-Pro-Hairline.ttf);
+  src: url(fonts/Arista-Pro-Hairline.ttf);
 }
 
 @font-face {
   font-family: AristaProLight;
-  src: url(./fonts/Arista-Pro-Light.ttf);
+  src: url(fonts/Arista-Pro-Light.ttf);
 }
 
 @font-face {
   font-family: AristaProRegular;
-  src: url(./fonts/Arista-Pro-Regular.ttf);
+  src: url(fonts/Arista-Pro-Regular.ttf);
 }
 
 @font-face {
   font-family: AristaProSemiBold;
-  src: url(./fonts/Arista-Pro-SemiBold.ttf);
+  src: url(fonts/Arista-Pro-SemiBold.ttf);
 }
 
 @font-face {
   font-family: AristaProThin;
-  src: url(./fonts/Arista-Pro-Thin.ttf);
+  src: url(fonts/Arista-Pro-Thin.ttf);
 }

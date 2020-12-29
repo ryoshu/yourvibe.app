@@ -1,5 +1,5 @@
 <script>
-  import Color from '../components/style-guide/Color.svelte';
+  import Color from './style-guide/Color.svelte';
 </script>
 
 <h1>Digital Style Guide</h1>
